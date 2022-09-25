@@ -1,0 +1,10 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "typeindex": "c",
+        "typeinfo": "c",
+        "string_view": "c",
+        "regex": "c",
+        "iostream": "cpp"
+    }
+}
