@@ -1,0 +1,29 @@
+class Solution{
+
+    public boolean isLeaf(Node root) 
+    { 
+        if(root == null) 
+           return false; 
+        if (root.left == null && root.right == null) 
+           return true; 
+        
+        return false; 
+    } 
+    
+    public int leftLeavesSum(Node root) 
+    { 
+        int ans = 0;
+      
+        if(root != null) 
+        {
+            if(isLeaf(root.left)) 
+                ans += root.left.data; 
+            else 
+                ans += leftLeavesSum(root.left); 
+            ans += leftLeavesSum(root.right); 
+        }
+        
+        return ans; 
+    } 
+
+}

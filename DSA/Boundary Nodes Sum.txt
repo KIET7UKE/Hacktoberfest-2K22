@@ -1,0 +1,82 @@
+static void LeftBoundary(Node root)  
+{  
+    if (root != null) 
+    {  
+        if (root.left != null) 
+        {  
+            sum_of_boundary_nodes += root.data;  
+            LeftBoundary(root.left);  
+        }  
+        else if (root.right != null) 
+        {  
+            sum_of_boundary_nodes += root.data;  
+            LeftBoundary(root.right);  
+        }  
+    }  
+}  
+  
+// Function to sum up all the right boundary nodes  
+// except the leaf nodes  
+static void RightBoundary(Node root)  
+{  
+    if (root != null) 
+    {  
+        if (root.right != null) 
+        {  
+            RightBoundary(root.right);  
+            sum_of_boundary_nodes += root.data;  
+        }  
+        else if (root.left != null) 
+        {  
+            RightBoundary(root.left);  
+            sum_of_boundary_nodes += root.data;  
+        }  
+    }  
+}  
+  
+// Function to sum up all the leaf nodes  
+// of a binary tree  
+static void Leaves(Node root)  
+{  
+    if (root != null) 
+    {  
+        Leaves(root.left);  
+  
+        // Sum it up if it is a leaf node  
+        if ((root.left == null) && (root.right == null))  
+            sum_of_boundary_nodes += root.data;  
+  
+        Leaves(root.right);  
+    }  
+}  
+  
+// Function to return the sum of all the  
+// boundary nodes of the given binary tree  
+static int sumOfBoundaryNodes( Node root)  
+{  
+    if (root != null)  
+    {  
+  
+        // Root node is also a boundary node  
+        sum_of_boundary_nodes = root.data;  
+  
+        // Sum up all the left nodes  
+        // in TOP DOWN manner  
+        LeftBoundary(root.left);  
+  
+        // Sum up all the  
+        // leaf nodes  
+        Leaves(root.left);  
+        Leaves(root.right);  
+  
+        // Sum up all the right nodes  
+        // in BOTTOM UP manner  
+        RightBoundary(root.right);  
+  
+        // Return the sum of  
+        // all the boundary nodes  
+        return sum_of_boundary_nodes;  
+    }  
+  
+    return 0;  
+}  
