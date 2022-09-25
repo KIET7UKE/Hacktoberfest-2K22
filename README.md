@@ -15,3 +15,12 @@
 | 8   |             [Math Puzzle](https://dainty-kringle-4febd3.netlify.app/)                               |
 | 9   |                  [Word Game](https://elegant-yeot-92b156.netlify.app/)                              |
 | 10  |    [Math Game](https://gleeful-figolla-d97c01.netlify.app/)                                         |
+
+
+## Contributing
+
+Before making any contribution, big or small, Contributors are advised to go through the [Contributing Guidelines](). 
+
+## Code of Conduct
+
+To maintain a safe and inclusive space for everyone to learn and grow, contributors are advised to follow the [Code of Conduct](). 
