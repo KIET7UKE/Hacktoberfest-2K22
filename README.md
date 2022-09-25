@@ -1,4 +1,4 @@
-# JS-for-Beginners
+# JS-Projects-for-Beginners
 
 
 ## View Live Demo
