@@ -31,13 +31,13 @@ https://hacktoberfest.com//</p>
 - Clone the forked repository to your local machine.
 
 ```markdown
-git clone https://github.com/KIET7UKE/Hacktoberfest-2022.git
+git clone https://github.com/KIET7UKE/Hacktoberfest-2K22.git
 ```
 
 - change the present working directory
 
 ```markdown
-cd Hacktoberfest-2022
+cd https://github.com/KIET7UKE/Hacktoberfest-2K22.git
 ```
 
 - Add/Create your project to the specific folder as described in what you can contribute section.
