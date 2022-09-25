@@ -13,6 +13,7 @@ https://hacktoberfest.com//</p>
 
 ### What can You contribute ⚠️
 - Contribute any JS projects you made.
+- Contribute any DSA problems of your choice
 - Make sure your follow the below steps.
 
 ---
