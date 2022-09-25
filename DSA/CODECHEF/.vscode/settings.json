@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "ATM.C": "cpp",
+        "cmath": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "string_view": "cpp",
+        "regex": "cpp"
+    }
+}

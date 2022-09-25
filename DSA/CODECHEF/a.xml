@@ -1,0 +1,28 @@
+public static void main(String[] args)
+{
+	int t;
+	t = Integer.parseInt(ConsoleInput.readToWhiteSpace(true));
+	while ((t--) != 0)
+	{
+		int n;
+		int count = 0;
+		n = Integer.parseInt(ConsoleInput.readToWhiteSpace(true));
+		int[] a = new int[n];
+
+		for (int i = 0; i < n; i++)
+		{
+			a[i] = Integer.parseInt(ConsoleInput.readToWhiteSpace(true));
+			count++;
+		}
+
+		if (count % 2 == 0)
+		{
+			System.out.print("YES");
+		}
+		else
+		{
+			System.out.print("NO");
+		}
+		System.out.print("\n");
+	}
+}
