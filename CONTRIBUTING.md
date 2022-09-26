@@ -1,4 +1,4 @@
-# 🌱 Contributing to hacktoberfest 2021
+# 🌱 Contributing to hacktoberfest 2022
 
 ![banner](https://user-images.githubusercontent.com/76551267/192131870-a8a3b7d7-cfbf-4e77-9cb5-b0a4e458b02f.png)
 
