@@ -2,7 +2,6 @@
 
 ![banner](https://user-images.githubusercontent.com/76551267/192131870-a8a3b7d7-cfbf-4e77-9cb5-b0a4e458b02f.png)
 
-
 ### Welcome to hacktoberfest 2022 Public Repository. 👨🏻‍💻
 
 <p>A month-long celebration from October 1st - 31st sponsored by Digital Ocean and GitHub to get people involved in Open Source. Create your very first pull request to any public repository on GitHub and contribute to the open source developer community.
@@ -12,13 +11,14 @@ https://hacktoberfest.com//</p>
 ---
 
 ### What can You contribute ⚠️
+
 - Contribute any JS projects you made.
 - Contribute any DSA problems of your choice
 - Make sure your follow the below steps.
 
 ---
 
-### Process are as follows :-
+### Process is as follows :-
 
 - Login using github @ [Hacktoberfest](https://hacktoberfest.digitalocean.com/)
 - Create four valid pull requests (PRs) between 1st - 31st October
@@ -63,6 +63,6 @@ git push origin branch-name
 
 - Make Sure you commit your changes in a new branch.
 - Make Sure you Give proper name to your files describing the addition.
-- Also Make Sure you comment your code whereever necessary.
+- Also Make Sure to put comments in your code wherever necessary.
 
 <!--       END OF README           END OF README         END OF README         END OF README          END OF README           END OF README           END OF README      -->
