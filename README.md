@@ -2,6 +2,8 @@
 
 # Hacktoberfest Swag <!-- current year start -->2022<!-- current year end -->
 
+Hy, I am Alvin Nayak. I am very happy to be a part of open source contribution!
+
 ![Hacktoberfest](https://user-images.githubusercontent.com/76551267/192132571-7d0d7952-9fcc-4e93-96bb-8350b20dcbfc.png "Hacktoberfest")
 
 [![Website](https://img.shields.io/badge/Website-visit-2a8?style=for-the-badge&logo=google-chrome&logoColor=white)](https://benbarth.github.io/hacktoberfest-swag/)
