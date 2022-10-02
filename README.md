@@ -39,14 +39,55 @@ keep in mind that repo has hacktoberfest topic..
 '''
 ```
 
-## Github Contribution Rules
+# Contribution rules📚:
 
-- Pull requests can be submitted to any opted-in repository on GitHub or GitLab.
-- The pull request must contain commits you made yourself.
-- If a maintainer reports your pull request as spam, it will not be counted toward your participation in Hacktoberfest.
-- If a maintainer reports behavior that’s not in line with the project’s code of conduct, you will be ineligible to participate.
+- The project must work when opening Contributors.html
+- You are allowed to make pull requests that break the rules. We just merge it ;)
+- Do NOT add any build steps e.g npm install (we want to keep this a simple static site)
+- Do NOT remove other content.
+- Styling/code can be pretty, ugly or stupid, big or small as long as it works
+- Add your name to the Contributors.html file
+- Try to keep pull requests small to minimize merge conflicts
 - To get a shirt, you must make four approved pull requests (PRs) on opted-in projects between October 1-31 in any time zone.
 - This year, the first 40,000 participants can earn a T-shirt.
+
+## Getting Started 🤩🤗:
+
+- Fork this repo (button on top)
+- Clone on your local machine
+
+```
+git clone https://github.com/fineanmol/Hacktoberfest2022.git
+
+```
+- Navigate to project directory.
+```
+cd Hacktoberfest2022
+```
+
+- Create a new Branch
+
+```markdown
+git checkout -b my-new-branch
+```
+- Add your contribution
+```
+git add .
+```
+- Commit your changes.
+
+```markdown
+git commit -m "Relevant message"
+```
+- Then push 
+```
+git push origin my-new-branch
+```
+
+
+- Create a new pull request from your forked repository
+
+<br>
 
 ## View Some JS Live Demo Projects
 
