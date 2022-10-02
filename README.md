@@ -57,12 +57,12 @@ keep in mind that repo has hacktoberfest topic..
 - Clone on your local machine
 
 ```
-git clone https://github.com/fineanmol/Hacktoberfest2022.git
+git clone https://github.com/KIET7UKE/Hacktoberfest-2K22
 
 ```
 - Navigate to project directory.
 ```
-cd Hacktoberfest2022
+cd Hacktoberfest-2K22
 ```
 
 - Create a new Branch
