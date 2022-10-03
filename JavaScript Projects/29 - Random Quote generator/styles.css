@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("/images/bg1.jpg");
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.612);
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    top: 140px;
+    left: 500px;
+}
+
+button {
+    background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 100%);
+    border-radius: 20px;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+    width: 100px;
+    height: 35px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    /* box-shadow: 2px 3px 3px rgba(172, 255, 47, 0.523); */
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    position: fixed;
+    top: 430px;
+    left: 710px;
+}
+button:hover {
+    background: linear-gradient(to right, rgba(172, 255, 47, 0.949) 0%, rgba(127, 255, 212, 0.977) 100%);
+    /* box-shadow: 2px 3px 3px rgba(127, 255, 212, 0.523); */
+    transition: all 0.4s;
+}
+h1 {
+    background: linear-gradient(to right, #ff8a00 0%, #dd4c4f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 30px 10px 40px;
+    font-family: 'Oswald', sans-serif;
+}
+.quote {
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+}
+
+h4 {
+    padding-left: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
