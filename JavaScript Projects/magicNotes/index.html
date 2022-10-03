@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="heading">
+                <h3>My Notes</h3>
+                <a href="index.html">
+                    <h5>Home</h5>
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" name="searchText" id="searchText" placeholder="Search Notes">
+                <button type="button" id="searchBtn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="welcome">
+            <h2>Welcome to My Notes</h2>
+        </div>
+        <div class="takeNote">
+            <h3>Add a note</h3>
+            <textarea name="noteInput" id="noteInput" cols="90" rows="5"></textarea>
+            
+            <button type="button" id="addNote" class="button">
+                Add Note
+            </button>
+        </div>
+        <div class="notes">
+            <h2>Your Notes</h2>
+            <p id="desc" >Add notes to display here.</p><!-- can add hide class to hide -->
+            <div id="notesContainer"></div>
+        </div>
+    </div>
+
+
+</body>
+<script src="/JS/index.js"></script>
+</html>
