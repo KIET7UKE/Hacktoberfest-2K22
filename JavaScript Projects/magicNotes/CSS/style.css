@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+
+    position: sticky;
+    top: 0;
+}
+nav{
+    padding: 1rem;
+    background-color: rgb(63, 62, 62);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    display: flex;
+    align-items: center;
+}
+
+.heading a{
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.search input{
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.search input:focus{
+    border: none;
+    
+}
+
+#searchBtn{
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 5px;
+    color: rgb(0, 192, 0);
+    background-color: rgb(63, 62, 62);
+    border: 1px solid rgb(0, 192, 0);
+    
+    /* background-color: green; */
+}
+#searchBtn:active{
+    border: 1px solid green;
+    color: green;
+    
+}
+
+.container{
+    height:100vh;
+    width: 70%;
+    /* background-color: green; */
+    margin: auto;
+    
+    padding: 2rem;
+}
+
+.welcome{
+    text-align: center;
+}
+
+.takeNote{
+    margin-top: 1rem;
+    padding: 1rem;
+    height: 250px;
+    line-height: 2rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#noteInput{
+    padding: 0.5rem;
+    border: 2px solid lightskyblue;
+    width: 90%;
+}
+
+
+
+.button{
+    cursor: pointer;
+    background-color: rgb(49, 158, 226);
+    padding: 5px;
+    color:white;
+    border: none;
+    border-radius: 4px;
+}
+.button:active{
+    background-color: rgb(38, 135, 196);
+    
+}
+
+.notes{
+    width: 100%;
+    line-height:2rem;
+    /* background-color: red; */
+    height: fit-content;
+    padding: 1rem;
+}
+.hide{
+    display: none;
+}
+#notesContainer{
+    display: flex;
+    /* padding: 2rem; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(49, 158, 226);
+    width: 100%;
+    
+}
+.note{
+    margin: 1rem 0;
+    width: 30%;
+    height: fit-content;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 1rem;
+    
+}
+.noteHead h2{
+    text-transform: capitalize;
+}
+.note div{
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width:700px){
+    
+    nav{
+        height: 100px;
+        padding: 1rem 0.5rem;
+        /* background-color: red; */
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container{
+        height:100vh;
+        width: 80%;
+        /* background-color: green; */
+        margin: auto;
+        
+        padding: 2rem;
+    }
+    .note{
+        margin: 1rem 0;
+        width: 100%;
+    }
+    #notesContainer{
+        flex-direction: column;
+    }
+}
