@@ -103,6 +103,7 @@ git push origin my-new-branch
 | 8   |       [Math Puzzle](https://dainty-kringle-4febd3.netlify.app/)       |
 | 9   |         [Word Game](https://elegant-yeot-92b156.netlify.app/)         |
 | 10  |       [Math Game](https://gleeful-figolla-d97c01.netlify.app/)        |
+| 11  |       [Sorting Visualizer](https://punyakrit.github.io/Sorting-Visualizer/)        |
 
 ## Rules
 
