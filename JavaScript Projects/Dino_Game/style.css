@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+body{
+    background-color: beige;
+}
+.gameOver{
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    text-align: center;
+    font-size: 40px;
+    display: none;
+    color:rgb(126, 9, 9);
+}
+.headi{
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(0, 161, 186);
+}
+.contanier{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid black;
+}
+#myVideo {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+   }
+.contanier h1{
+   text-align: center;
+   font-size: 50px;
+
+}
+.contanier h2{
+    margin-left: 170px;
+    font-size: 25px;
+    margin-top: 40px;
+}
+.box{
+    height: 15vh;
+    width: 20vh;
+}
+.box1{
+    position: relative;
+    top: 200px;
+    height: 30vh;
+    width: 30vh;
+    left: 260px;
+ }
+.animate1
+ {
+    animation: box1 1s infinite linear ;
+}
+@keyframes box1 {
+    0%{top: 200px;}
+    30%{top: 80px;}
+    75%{top: 80px;}
+    100%{top: 200px;}
+}
+.box3{
+    position: relative;
+    top: 100px;
+    left: 1042px;
+    width: 10vh;
+
+    animation: box3 2s infinite linear ;
+}
+@keyframes box3 {
+    0%{left:1042px;}
+    100%{left:130px}
+}
+
+@media only screen and (max-width:700px) {
+    body{
+        background-color: beige;
+    }
+    .gameOver{
+        position: absolute;
+        top: 300px;
+        left: 80px;
+        text-align: center;
+        font-size: 10px;
+        display: none;
+        color:rgb(126, 9, 9);
+    }
+    .headi{
+        text-align: center;
+        font-size: 40px;
+        background-color: rgb(0, 161, 186);
+    }
+    .contanier{
+        height: 100vh;
+        width: 100%;
+        border: 1px solid black;
+    }
+    #myVideo {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        z-index: -1;
+       }
+    .contanier h1{
+       text-align: center;
+       font-size: 50px;
+    
+    }
+    .contanier h2{
+        margin-left: 170px;
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .box1{
+        position: relative;
+        top: 120px;
+        height: 15vh;
+        width: 15vh;
+        left: 20px;
+     }
+    .animate1
+     {
+        animation: box1 1s infinite linear ;
+    }
+    @keyframes box1 {
+        0%{top: 120px;}
+        30%{top: 40px;}
+        75%{top: 40px;}
+        100%{top: 120px;}
+    }
+    .box3{
+        position: relative;
+        top: 77px;
+        height: 5vh;
+        left: 250px;
+        width: 7vh;
+    
+        animation: box3 2s infinite linear ;
+    }
+    @keyframes box3 {
+        0%{left:270px;}
+        100%{left:-40px}
+    }
+    
+}
+
