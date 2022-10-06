@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            background-image: url("background6.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        /* page header */
+        header {
+            background-color: rgb(245, 245, 245);
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar li {
+            list-style: none;
+            padding: 7px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: rgb(88, 88, 88);
+        }
+
+        #search {
+            border: 1px solid rgb(97, 97, 97);
+            border-radius: 15px;
+            padding: 5px;
+        }
+
+        #searchbar {
+            align-self: center;
+        }
+
+        #icon {
+            border: none;
+            border-radius: 8px;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        #icon:hover {
+            background-color: rgb(231, 230, 230);
+        }
+
+        /* page content */
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            background-color: rgb(245, 243, 243);
+            border: 2px solid gray;
+            border-radius: 15px;
+            width: 65%;
+            margin-top: 40px;
+            margin-left: 250px;
+        }
+
+        .content h2 {
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 50px;
+        }
+        .content p{
+            color: rgb(0, 102, 255);
+            font-size: 18px;
+        }
+        .field button {
+            padding: 10px;
+            width: 40%;
+            border-radius: 19px;
+        }
+
+        .content button:hover {
+            background-color: rgb(230, 230, 230);
+            box-shadow: 2px 3px #999;
+        }
+
+        .field {
+            margin: 25px 0 25px 0;
+        }
+
+        .field textarea {
+            padding: 10px;
+            width: 80%;
+            box-sizing: border-box;
+        }
+
+        form .field input {
+            padding: 10px;
+            width: 80%;
+            border-radius: 4px;
+            border: 1px solid gray;
+            box-sizing: border-box;
+        }
+
+        .seller {
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .seller table {
+            background-color: #2c2c2c;
+            color: white;
+        }
+
+        .seller td {
+            padding: 10px;
+            width: 90%;
+        }
+
+        .seller img {
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+        }
+
+        .seller div {
+            background-color: rgb(247, 247, 247);
+            color: rgb(61, 61, 61);
+        }
+
+        .s-detail {
+            background-color: rgb(230, 230, 230) !important;
+            padding: 10px;
+        }
+
+        .seller h3 {
+            margin: 0px !important;
+            padding: 6px 0 24px 0;
+        }
+        #seller-1 img{
+        height: 150px;
+        width: 150px;
+        }
+        #seller-3 img{
+        height: 150px;
+        width: 150px;
+        }
+
+        #seller-1{
+            position: relative;
+            left: 21px;
+            z-index:1;
+            box-shadow: 3px 4px 8px 3px rgba(46, 46, 46, 0.2), 0 6px 20px 0 rgba(112, 112, 112, 0.19);
+        }
+        #seller-2{
+            position: relative;
+            z-index:3;
+            box-shadow: 3px 4px 8px 3px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #seller-3{
+            position: relative;
+            z-index:1;
+            right: 21px;
+            box-shadow: 3px 4px 8px 3px rgba(46, 46, 46, 0.2), 0 6px 20px 0 rgba(112, 112, 112, 0.19);
+        }
+        /* footer */
+        footer {
+            color: white;
+            background-color: #2c2c2c;
+        }
+
+        .foot {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .foot-section {
+            width: 200px;
+            margin: 5px;
+            padding: 3px;
+            text-align: left;
+        }
+
+        #foot-1 {
+            flex: 0.2 0 auto;
+        }
+
+        #foot-1 p {
+            text-align: left;
+        }
+
+        #foot-2 {
+            flex: 0.1 0 auto;
+            text-align: center !important;
+        }
+
+        #foot-3 {
+            flex: 0.15 0 auto;
+        }
+
+        .foot-items {
+            list-style-position: inside;
+            padding-left: 2px;
+        }
+
+        .foot-items li {
+            list-style: none;
+            padding: 7px 0 7px 0;
+        }
+
+        .foot-items li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .fa {
+            color: white
+        }
+
+        #copyr {
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid white;
+        }
+
+        #copyr :nth-child(1) {
+            padding: 14px 0 14px 0;
+        }
+
+        #copyr i {
+            padding: 0px 7px 0px 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="item-1">
+        <h1>J.A_Mattress Protectors</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="our-products.html">Our Products</a> </li>
+                <li><a href="our-products.html">About Us</a> </li>
+                <li><a href="contact.html">Contact Us</a> </li>
+            </ul>
+            <span id="searchbar">
+                <input type="text" id="search" placeholder="Search">
+                <button type="submit" class="fa fa-search" id="icon"></button>
+            </span>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="container">
+
+            <div class="item">
+                <h2>Connect With Us</h2>
+                <form>
+                    <div class="field">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="field">
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="field">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="field">
+                        <textarea id="" rows="6" cols="91" placeholder="Your valuable feedback for us!"></textarea>
+                    </div>
+                    <div class="field">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+                <h2 style="margin-top: 50px;">Our Sellers</h2>
+            </div>
+        </div>
+
+        <div id="sellers" class="container">
+
+            <div class="seller" id="seller-1">
+                <div>
+                    <img src="images/seller1.jpg" alt="">
+                    <h3>Mark Zuckerberg</h3>
+                </div>
+                <div class="s-detail">
+                    <table>
+                        <tr>
+                            <td>Phone</td>
+                            <td>0900-78601</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>Zuckerberg@gmail.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="seller"  id="seller-2">
+                <div>
+                    <img src="images/seller2.jpg" alt="">
+                    <h3>Hisham sarwar</h3>
+                </div>
+                <div class="s-detail">
+                    <table>
+                        <tr>
+                            <td>Phone</td>
+                            <td>0900-78601</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>Hisham@gmail.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="seller"  id="seller-3">
+                <div>
+                    <img src="images/seller3.jpg" alt="">
+                    <h3>Dananeer mobeen</h3>
+                </div>
+                <div class="s-detail">
+                    <table>
+                        <tr>
+                            <td>Phone</td>
+                            <td>0900-78601</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>Dananeer@gmail.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <h2 style="margin-top: 60px;">Email Us</h2>
+        <p>markZuckerberg@gmail.com</p>
+    </div>
+
+
+
+    <footer class="item" id="item-6">
+        <div class="foot">
+            <div class="foot-section" id="foot-1">
+                <h3>J.A MATTRESS PROTECTORS</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt voluptate consequuntur rem
+                    modi
+                    pariatur sed nulla,
+                    animi sapiente adipisci sunt recusandae sequi molestiae ut. At rerum odit quibusdam deleniti
+                    eaque!
+                </p>
+            </div>
+
+            <div class="foot-section" id="foot-2">
+                <h3>USEFUL LINKS</h3>
+                <ul class="foot-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-section" id="foot-3">
+                <h3>CONTACT</h3>
+                <ul class="foot-items">
+                    <li>
+                        <i class="fa fa-home"> </i>
+                        <a href="#">Lahore, Pakistan</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope"> </i>
+                        <a href="#">mahnoor@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone"> </i>
+                        <a href="#">0900-78601</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-print"> </i>
+                        <a href="#">0312456541</a>
+                    </li>
+            </div>
+            </ul>
+        </div>
+        <div id="copyr">
+            <span>
+                &copy 2020 Copyright: <b> Mahnoordev.com </b>
+            </span>
+            <span>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-google-plus"></i>
+                <i class="fa fa-linkedin"></i>
+            </span>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

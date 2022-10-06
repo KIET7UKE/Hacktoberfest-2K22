@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        
+         /* set background image of page */
+         .bg {
+            background-image: url("bg.jpg");
+            background-position: center;
+            background-size: cover;
+            
+        }
+        /* header */
+        header {
+            background-color: rgb(245, 245, 245);
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around
+        }
+        .navbar li {
+            display: inline;
+        }
+        .navbar li {
+            list-style: none;
+            padding: 7px;
+        }
+        .navbar li a {
+            text-decoration: none;
+            color: rgb(88, 88, 88);
+        }
+        #search {
+            border: 1px solid rgb(97, 97, 97);
+            border-radius: 15px;
+            padding: 5px;
+        }
+        #searchbar {
+            align-self: center;
+        }
+        #icon {
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 20px;
+            background-color: transparent;
+            color: black;
+        }
+        #icon:hover {
+            background-color: rgb(231, 230, 230);
+        }
+
+        /* page content */
+        body {
+            text-align: center;
+            margin: 0px;
+        }
+
+        .content{
+            border: 2px solid gray;
+            border-radius: 20px;
+            margin: 1px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .item {
+            border: 2px red;
+            height: auto;
+            width: 50%;
+            align-self: flex-end;
+        }
+
+        #product {
+            height: 230px;
+            width: 280px;
+            margin: 0 210px 0 160px;
+        }
+
+        #item-1 {
+            width: 100% !important;
+            height: auto;
+            display: inherit;
+        }
+
+        #item-1>:nth-child(2) {
+            padding: 15px 30px 20px 30px;
+        }
+
+        .details {
+            width: 80%;
+            box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid black
+        }
+        .details td, th {
+            padding: 10px;
+        }
+
+        .details tr:nth-child(even) {
+            background-color: rgb(230, 230, 230);
+        }
+
+        .tablebox button {
+            padding: 7px 0 7px 0;
+            margin: 8px;
+            border: 1px solid gray;
+            border-radius: 3px;
+            box-shadow: 1px 3px #999;
+            width: 80%;
+        }
+
+        .tablebox button:hover {
+            background-color: rgb(230, 230, 230);
+        }
+
+        /* footer */
+
+        footer {
+            color: white;
+            background-color: #2c2c2c;
+        }
+
+        .foot {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .foot-section {
+            width: 200px;
+            margin: 5px;
+            padding: 3px;
+            text-align: left;
+        }
+
+        #foot-1 {
+            flex: 0.2 0 auto;
+        }
+
+        #foot-1 p {
+            text-align: left;
+        }
+
+        #foot-2 {
+            flex: 0.1 0 auto;
+            text-align: center !important;
+        }
+
+        #foot-3 {
+            flex: 0.15 0 auto;
+        }
+
+        .foot-items {
+            list-style-position: inside;
+            padding-left: 2px;
+        }
+
+        .foot-items li {
+            list-style: none;
+            padding: 7px 0 7px 0;
+        }
+
+        .foot-items li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .fa {
+            color: white
+        }
+
+        #copyr {
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid white;
+            height: 10px;
+        }
+
+        #copyr :nth-child(1) {
+            padding: 14px 0 14px 0;
+        }
+
+        #copyr i {
+            padding: 0px 7px 0px 7px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="bg container">
+        <header>
+            <h1>J.A_Mattress Protectors</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="our-products.html">Our Products</a> </li>
+                    <li><a href="detail.html">About Us</a> </li>
+                    <li><a href="contact.html">Contact Us</a> </li>
+                </ul>
+                <span id="searchbar">
+                    <input type="text" id="search" placeholder="Search">
+                    <button type="submit" class="fa fa-search" id="icon"></button>
+                </span>
+            </nav>
+        </header>
+
+
+        <div class="container content">
+            <h1>Mattress Protector</h1>
+            <div class="item" id="item-1">
+                <span>
+                    <img id="product" src="images/detail.jpg" alt="">
+                </span>
+                <span>
+                    <h1>Description</h1>
+                    <p> To fit mattress 135 x 190cm. Please choose your desired mattress depth. The top and sides are
+                        made from premium quilted, breathable, luxury COOLFLEX stretch knit fabric, that helps to regulate
+                        body temperature and adds a soft and sumptuous layer to your mattress. This bed bug resistant cover
+                        zipsall round for a secure fit. The cover fully encases the mattress and although the quilted fabric
+                        doeshave some stretch, the base fabric does not, so please check your mattress measurements before
+                        ordering to ensure the best fit. Machine washable at 40°C, tumble dry on low setting.
+                    </p>
+                </span>
+            </div>
+            <div class="item tablebox" id="item-2">
+                <h1>Pricing</h1>
+                <table class="details">
+                    <tr>
+                        <th>Size</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>20-22(8")
+                        <td>Rs 10000</td>
+                    </tr>
+                    <tr>
+                        <td>25-27(10")</td>
+                        <td>Rs 20000</td>
+                    </tr>
+                    <tr>
+                        <td>30-32(12")</td>
+                        <td>Rs 35000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="item tablebox" id="item-3">
+                <h2>Availability</h2>
+                <table class="details">
+                    <tr>
+                        <th>Size</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>20-22(8")
+                        <td><a href="our-products.html"> In stock</a> </td>
+                    </tr>
+                    <tr>
+                        <td>25-27(10")</td>
+                        <td><a href="our-products.html"> In stock</a> </td>
+                    </tr>
+                    <tr>
+                        <td>30-32(12")</td>
+                        <td><a href="our-products.html"> In stock</a> </td>
+                    </tr>
+                </table>
+                <a href='contact.html'>
+                    <button>Click Here</button>
+                </a>
+            </div>
+
+        </div>
+        <footer>
+            <div class="foot">
+                <div class="foot-section" id="foot-1">
+                    <h3>J.A MATTRESS PROTECTORS</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt voluptate consequuntur rem
+                        modi
+                        pariatur sed nulla,
+                        animi sapiente adipisci sunt recusandae sequi molestiae ut. At rerum odit quibusdam deleniti
+                        eaque!
+                    </p>
+                </div>
+
+                <div class="foot-section" id="foot-2">
+                    <h3>USEFUL LINKS</h3>
+                    <ul class="foot-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="foot-section" id="foot-3">
+                    <h3>CONTACT</h3>
+                    <ul class="foot-items">
+                        <li>
+                            <i class="fa fa-home"> </i>
+                            <a href="#">Lahore, Pakistan</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"> </i>
+                            <a href="#">mahnoor@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"> </i>
+                            <a href="#">0900-78601</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-print"> </i>
+                            <a href="#">0312456541</a>
+                        </li>
+                </div>
+                </ul>
+            </div>
+            <div id="copyr"  class="foot">
+                <span>
+                    &copy 2020 Copyright: <b> Mahnoordev.com </b>
+                </span>
+                <span>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-google-plus"></i>
+                    <i class="fa fa-linkedin"></i>
+                </span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

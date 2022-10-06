@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html,
+        body {
+            text-align: center;
+            margin: 0;
+        }
+
+        .bg {
+            background-color: rgb(236, 236, 236);
+        }
+
+        /* page header */
+        header {
+            background-color: rgb(245, 245, 245);
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar li {
+            list-style: none;
+            padding: 7px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: rgb(88, 88, 88);
+        }
+
+        #search {
+            border: 1px solid rgb(97, 97, 97);
+            border-radius: 15px;
+            padding: 5px;
+        }
+
+        #searchbar {
+            align-self: center;
+        }
+
+        #icon {
+            border: none;
+            border-radius: 8px;
+            background-color: transparent;
+            cursor: pointer;
+            color: black;
+        }
+
+        #icon:hover {
+            background-color: rgb(231, 230, 230);
+        }
+
+        /* page content */
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 2.5fr 2.5fr 2.5fr 2fr;
+            grid-template-rows: 0.25fr 0.25fr 1fr 1fr 0.5fr;
+        }
+
+        .item button {
+            padding: 7px 13px 7px 13px;
+            margin: 5px;
+            color: green;
+            border: 1px solid green;
+            border-radius: 5px;
+            box-shadow: 1px 3px #999;
+        }
+
+        .item button:hover {
+            background-color: rgb(230, 230, 230);
+        }
+
+        .item {
+            margin: 1px;
+        }
+
+        #item-1 {
+            background-color: rgb(243, 243, 243);
+            grid-column: 1/6;
+            order: 1;
+        }
+
+        #item-2 {
+            order: 2;
+            grid-column: 2/5;
+        }
+
+        #item-3 {
+            order: 3;
+            grid-column: 2/3;
+        }
+
+        #item-4 {
+            order: 3;
+            grid-column: 3/4;
+        }
+
+        #item-5 {
+            order: 3;
+            grid-column: 4/5;
+        }
+
+        #item-6 {
+            order: 4;
+            grid-column: 2/3;
+        }
+
+        #item-7 {
+            order: 4;
+            grid-column: 3/4;
+        }
+
+        #item-8 {
+            order: 4;
+            grid-column: 4/5;
+        }
+
+        #item-9 {
+            grid-column: 1/6;
+            order: 5;
+        }
+
+        /* products card */
+
+        .product {
+            background-color: white;
+            border-radius: 18px;
+        }
+
+        .buttons {
+            background-color: rgb(243, 242, 242);
+            border: 1px solid rgb(196, 196, 196);
+        }
+
+        .product img {
+            width: 100%;
+            height: 280px;
+            background-color: transparent !important;
+            border-radius: 18px 18px 0 0;
+        }
+
+        .product button {
+            padding: 7px 13px 7px 13px;
+            margin: 5px;
+            color: green;
+            border: 1px solid green;
+            border-radius: 5px;
+            box-shadow: 1px 3px #999;
+        }
+
+        .product button:hover {
+            background-color: rgb(230, 230, 230);
+        }
+
+        .product h3 {
+            margin: 0px !important;
+            padding-bottom: 25px;
+            border: 1px solid rgb(196, 195, 195);
+        }
+
+        /* footer */
+        footer {
+            color: white;
+            background-color: #2c2c2c;
+        }
+
+        .foot {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .foot-section {
+            width: 200px;
+            margin: 5px;
+            padding: 3px;
+            justify-content: center;
+        }
+
+        #foot-1 {
+            flex: 0.2 0 auto;
+        }
+
+        #foot-1 p {
+            text-align: left;
+        }
+
+        #foot-2 {
+            flex: 0.1 0 auto;
+        }
+
+        #foot-3 {
+            flex: 0.15 0 auto;
+        }
+
+        .foot-items {
+            list-style-position: inside;
+            padding-left: 2px;
+        }
+
+        .foot-items li {
+            list-style: none;
+            padding: 7px 0 7px 0;
+        }
+
+        .foot-items li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .fa {
+            color: white
+        }
+
+        #copyr {
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid white;
+        }
+
+        #copyr :nth-child(1) {
+            padding: 14px 0 14px 0;
+        }
+
+        #copyr i {
+            padding: 0px 7px 0px 7px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bg container">
+        <header id="item-1">
+            <h1>J.A_Mattress Protectors</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="our-products.html">Our Products</a> </li>
+                    <li><a href="detail.html">About Us</a> </li>
+                    <li><a href="contact.html">Contact Us</a> </li>
+                </ul>
+                <span id="searchbar">
+                    <input type="text" id="search" placeholder="Search">
+                    <button type="submit" class="fa fa-search" id="icon"></button>
+                </span>
+            </nav>
+        </header>
+
+        <div class="item" id="item-2">
+            <h1>Our Products</h1>
+        </div>
+
+
+
+        <section class="item" id="item-3">
+            <div class="product">
+                <img src="images/product1.jpg" alt="">
+                <h3>Double Mattress Cover</h3>
+                <button type="submit">Show Details</button>
+            </div>
+        </section>
+        <section class="item" id="item-4">
+            <div class="product">
+                <img src="images/product2.jpg" alt="">
+                <h3>King Size Mattress Cover</h3>
+                <button type="submit">Show Details</button>
+            </div>
+        </section>
+        <section class="item" id="item-5">
+            <div class="product">
+                <img src="images/product3.jpg" alt="">
+                <h3>Small Double(3/4) Mattress Cover</h3>
+                <button type="submit">Show Details</button>
+            </div>
+        </section>
+
+        <section class="item" id="item-6">
+            <div class="product">
+                <img src="images/product5.jpg" alt="">
+                <h3>Waterproof King Mattress Cover</h3>
+                <button type="submit">Show Details</button>
+            </div>
+        </section>
+        <section class="item" id="item-7">
+            <div class="product">
+                <img src="images/product4.jpg" alt="">
+                <h3>Pillow Protectors(Per Pair)</h3>
+                <button type="submit">Show Details</button>
+            </div>
+        </section>
+        <section class="item" id="item-8">
+            <div class="product">
+                <img src="images/product6.jpg" alt="">
+                <h3>Waterproof Mattress Cover</h3>
+                <button type="submit">Show Details</button>
+            </div>
+        </section>
+
+        <footer class="item" id="item-9">
+            <div class="foot">
+                <div class="foot-section" id="foot-1">
+                    <h3>J.A MATTRESS PROTECTORS</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt voluptate consequuntur rem
+                        modi
+                        pariatur sed nulla,
+                        animi sapiente adipisci sunt recusandae sequi molestiae ut. At rerum odit quibusdam deleniti
+                        eaque!
+                    </p>
+                </div>
+
+                <div class="foot-section" id="foot-2">
+                    <h3>USEFUL LINKS</h3>
+                    <ul class="foot-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="foot-section" id="foot-3">
+                    <h3>CONTACT</h3>
+                    <ul class="foot-items">
+                        <li>
+                            <i class="fa fa-home"> </i>
+                            <a href="#">Lahore, Pakistan</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"> </i>
+                            <a href="#">mahnoor@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"> </i>
+                            <a href="#">0900-78601</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-print"> </i>
+                            <a href="#">0312456541</a>
+                        </li>
+                </div>
+                </ul>
+            </div>
+            <div id="copyr">
+                <span>
+                    &copy 2020 Copyright: <b> Mahnoordev.com </b>
+                </span>
+                <span>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-google-plus"></i>
+                    <i class="fa fa-linkedin"></i>
+                </span>
+            </div>
+    </div>
+    </footer>
+
+
+    </div>
+</body>
+
+</html>
