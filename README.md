@@ -119,12 +119,6 @@ Before making any contribution, big or small, Contributors are advised to go thr
 
 To maintain a safe and inclusive space for everyone to learn and grow, contributors are advised to follow the [Code of Conduct](./Code_Of_Conduct.md).
 
-## Contributors
- 
-<a href="https://github.com/KIET7UKE/Hacktoberfest-2K22/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=KIET7UKE/Hacktoberfest-2K22&max=500" alt="Contributors list" width="100%"/>
-</a>
-
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <br>
 
@@ -152,3 +146,11 @@ This project is licensed under the [**MIT license**](https://github.com/KIET7UKE
   <tbody><tr>
      <td align="center"><a href="https://github.com/KIET7UKE"><img alt="" src="https://avatars.githubusercontent.com/u/76551267?s=400&u=6683bf9ce8686492846628c6fc000bef22361a4e&v=4" width="125px;"><br><sub><b> Sahil Sharma </b></sub></a><br></td> </a></td>
 </tbody></table>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+<h3 align=center> Contributors ❤️ </h3>
+ 
+<a href="https://github.com/KIET7UKE/Hacktoberfest-2K22/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=KIET7UKE/Hacktoberfest-2K22&max=500" alt="Contributors list" width="100%"/>
+</a>
