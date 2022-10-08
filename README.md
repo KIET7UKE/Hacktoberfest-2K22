@@ -124,3 +124,31 @@ To maintain a safe and inclusive space for everyone to learn and grow, contribut
 <a href="https://github.com/KIET7UKE/Hacktoberfest-2K22/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=KIET7UKE/Hacktoberfest-2K22&max=500" alt="Contributors list" width="100%"/>
 </a>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<br>
+
+<div align="center">
+
+### Show some ❤️ by starring⭐ this awesome Repository!
+
+</div>
+  
+
+#
+
+	
+
+<h3 align=center> Project Admin ❤️ </h3>
+
+© 2022 Sahil Sharma and contributors\
+This project is licensed under the [**GPL license**](https://github.com/KIET7UKE/Hacktoberfest-2K22/blob/main/LICENSE).
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+<a href="#top"><img src="https://img.shields.io/badge/-Back%20to%20Top-red?style=for-the-badge" align="right"/></a>
+
+<p align="center">
+<table align="center">
+  <tbody><tr>
+     <td align="center"><a href="https://github.com/KIET7UKE"><img alt="" src="https://avatars.githubusercontent.com/u/76551267?s=400&u=6683bf9ce8686492846628c6fc000bef22361a4e&v=4" width="125px;"><br><sub><b> Sahil Sharma </b></sub></a><br></td> </a></td>
+</tbody></table>
