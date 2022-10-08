@@ -142,7 +142,7 @@ To maintain a safe and inclusive space for everyone to learn and grow, contribut
 <h3 align=center> Project Admin ❤️ </h3>
 
 © 2022 Sahil Sharma and contributors\
-This project is licensed under the [**GPL license**](https://github.com/KIET7UKE/Hacktoberfest-2K22/blob/main/LICENSE).
+This project is licensed under the [**MIT license**](https://github.com/KIET7UKE/Hacktoberfest-2K22/blob/main/LICENSE).
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 <a href="#top"><img src="https://img.shields.io/badge/-Back%20to%20Top-red?style=for-the-badge" align="right"/></a>
