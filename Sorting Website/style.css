@@ -3,11 +3,11 @@
 }
 
 .text-color {
-    color: #e43f5a;
+    color: #e22b4a;
 }
 
 body {
-    background-color: #162447;
+    background-color: #1d2f5e;
 }
 
 .flex-container {
@@ -21,7 +21,7 @@ body {
 }
 
 .flex-item {
-    background: #e43f5a;
+    background: #ce3952;
     border: 1pt solid black;
     width: 10px;
     transition: 0.1s all ease;
@@ -63,7 +63,7 @@ body {
     -webkit-appearance: none;
     width: 200px;
     height: 2px;
-    background-color: #e43f5a;
+    background-color: #c2364d;
 
     position: absolute;
     top: 50%;
