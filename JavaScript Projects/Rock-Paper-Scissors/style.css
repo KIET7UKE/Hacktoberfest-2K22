@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* background-color: blueviolet; */
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "VT323", monospace;
+  color: #1c3521;
+}
+.game-box {
+  display: block;
+  height: calc(100vh);
+  position: relative;
+  /* background-color: rgb(86, 189, 60); */
+  background-image: linear-gradient(
+    to top left,
+    rgb(12, 65, 1) 0%,
+    #00b91f 100%
+  );
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  overflow: hidden;
+
+  align-items: stretch;
+  justify-items: stretch;
+  box-shadow: 0 3rem 5rem rgba(187, 187, 187, 0.25);
+  /* backdrop-filter: blur(200px);
+  filter: blur(); */
+}
+
+.player-section,
+.computer-section {
+  background-color: rgb(77, 163, 59);
+  padding: 3.2rem 2.4rem;
+  width: 40rem;
+  position: relative;
+  transition: all 1s;
+}
+
+.player-section {
+  /* pointer-events: none; */
+}
+
+.computer-section {
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+
+  margin-bottom: 4rem;
+}
+
+.heading-secondary {
+  font-size: 3.8rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1.4px;
+}
+
+.btn-holder {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+}
+
+.btn {
+  border: none;
+  font-family: "VT323", monospace;
+  font-size: 1.8rem;
+  color: #1c3521;
+}
+
+.score-box {
+  max-width: 50%;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.2rem;
+  margin: 0 auto;
+  background-color: rgb(241, 255, 240);
+  margin-bottom: 4rem;
+  box-shadow: inset 0 0 2rem rgb(172, 170, 170);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.2rem 0rem;
+  border-radius: 5px;
+  width: 8rem;
+  background-color: rgba(240, 255, 223, 0.507);
+  text-align: center;
+  box-shadow: 0.3rem 0.4rem 0rem #338556;
+  cursor: pointer;
+  backdrop-filter: blur(200px);
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: rotateX(22deg) translateY(0px) translateX(2px);
+  box-shadow: 0px 1px 1px #208e4f;
+}
+
+.player-active {
+  background-color: rgba(255, 255, 255, 0.445);
+}
+
+.round-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(
+    to top left,
+    rgb(32, 136, 12) 0%,
+    #0bd42c 100%
+  );
+  gap: 1.2rem;
+  padding-top: 1rem;
+  height: 10vh;
+}
+
+.round-counter {
+  width: 5rem;
+  /* height: 5rem; */
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(241, 255, 240);
+  box-shadow: inset 0 0 2rem rgb(172, 170, 170);
+}
+
+.heading-rounds {
+  margin-bottom: 0;
+}
+
+.display-rounds {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c5b7b76c;
+  font-size: 2.4rem;
+  padding: 1.2rem;
+  border-radius: 100px;
+  /* display: none; */
+  z-index: 1;
+}
+
+.start-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  /* display: none; */
+}
+
+.select-rounds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgba(199, 250, 118, 0.63);
+  backdrop-filter: blur(2px);
+}
+
+#rounds {
+  width: 5rem;
+  height: 3rem;
+  font-family: "VT323", monospace;
+  font-size: 1.8rem;
+  color: #1c3521;
+}
+#rounds:focus {
+  outline: none;
+}
+
+.selection-label {
+  font-size: 2.4rem;
+}
+
+.play-btn:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.blur {
+  filter: blur(3px);
+  /* z-index: -1; */
+
+  /* z-index: -1; */
+}
+
+.disable {
+  pointer-events: none;
+  visibility: none;
+}
+
+.playAgain-btn {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+}
