@@ -1,0 +1,45 @@
+@media (max-width: 53em) {
+  .player-section,
+  .computer-section {
+    width: 30rem;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .score-box {
+    max-width: 35%;
+    height: 5rem;
+  }
+}
+
+@media (max-width: 39.5em) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .player-section,
+  .computer-section {
+    width: 90vw;
+    height: 30rem;
+  }
+
+  .player-section {
+    padding-bottom: 2rem;
+  }
+  .score-box {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 5rem;
+  }
+
+  .center-img {
+    max-width: 30%;
+    margin-bottom: 2rem;
+  }
+  .selection-label {
+    text-align: center;
+  }
+}
+
+@media (max-width: 29.8em) {
+}
